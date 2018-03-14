@@ -1,60 +1,66 @@
 /*Main stylees*/
-body{
+
+body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: #291f1a;
     font-weight: 300;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
 }
 
-span{
+span {
     font-weight: 400;
     color: #1ac056;
 }
 
-section{
+section {
     padding-top: 20px;
     padding-bottom: 100px;
     padding-right: 80px;
     padding-left: 80px;
 }
 
-
 /*Menu styles*/
 
-#main-nav{
+#main-nav {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     z-index: 10;
+    transition: all 0.3s;
 }
 
-#main-nav ul{
+#main-nav ul {
     margin: 0;
     float: right;
 }
 
-#main-nav ul li{
+#main-nav ul li {
     list-style: none;
     display: inline-block;
     padding: 20px 40px;
 }
 
-#main-nav ul li a{
+#main-nav ul li a {
     text-decoration: none;
-    color: #1ac056;
+    color: #fff;
 }
 
-#main-nav ul li a:hover{
-    color: #291f1a;
+#main-nav ul li a:hover {
+    color: #1ac056;
 }
 
 #main-nav #drop,
@@ -62,9 +68,26 @@ section{
     display: none;
 }
 
+.main-nav-scroll {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff !important;
+    z-index: 10;
+    color: #1ac056;
+}
+
+.main-nav-scroll>ul li a {
+    color: #1ac056 !important;
+}
+
+.main-nav-scroll>ul li a:hover {
+    color: #291f1a !important;
+}
+
 /*Header styles*/
 
-#main-header{
+#main-header {
     position: relative;
     height: 100vh;
     background-image: url(../img/header-background.jpg);
@@ -73,7 +96,7 @@ section{
     background-repeat: no-repeat;
 }
 
-#main-header .main-header-content{
+#main-header .main-header-content {
     position: absolute;
     color: #fff;
     top: 50%;
@@ -81,13 +104,13 @@ section{
     transform: translate(-50%, -50%);
 }
 
-#main-header .main-header-content h1{
+#main-header .main-header-content h1 {
     font-weight: 300;
     font-size: 4em;
     font-family: 'Roboto', sans-serif;
 }
 
-#main-header .main-header-content h2{
+#main-header .main-header-content h2 {
     font-weight: 300;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
@@ -95,7 +118,7 @@ section{
 
 /*About*/
 
-#about{
+#about {
     background-color: #f9fcfe;
     box-shadow: -1px 6px 20px 0px #0000004d;
 }
@@ -122,22 +145,23 @@ section{
 
 /*Skills*/
 
-#skills p{
+#skills p {
     padding-right: 30px;
     padding-left: 30px;
     text-align: center;
 }
 
-#skills #skills-icons{
+#skills #skills-icons {
     margin-top: 40px;
     text-align: center;
 }
 
-#skills figure{
+#skills figure {
     display: inline-block;
 }
 
 /* portfolio */
+
 #portfolio {
     overflow: hidden;
 }
@@ -165,7 +189,7 @@ section{
 
 #portfolio .background .mask {
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: all 0.4s;
     padding: 10px;
@@ -200,6 +224,7 @@ section{
 }
 
 /* contact */
+
 #contact {
     background-color: #213b50;
     overflow: hidden;
@@ -282,6 +307,7 @@ section{
 }
 
 /* footer */
+
 footer {
     background-color: #142634;
     color: #fff;
@@ -290,4 +316,3 @@ footer {
 footer p {
     margin: 0 10px;
 }
-
